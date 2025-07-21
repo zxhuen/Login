@@ -41,7 +41,7 @@ function LogIn() {
         userData.Cpassword === password
     ) {
         alert("Login successful");
-        window.location.href = "https://www.youtube.com/";
+        window.location.href = "Home/Home.html";
     } else {
         document.getElementById("wrongPass").style.display = "block";
     }

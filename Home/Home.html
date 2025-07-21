@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Dashboard</title>
+    <link rel="stylesheet" href="Home.css" />
+    <script src="Home.js" defer></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-icon hamburger" onclick="toggleSidebar()">
+            <img src="img/home.png" alt="Logo" class="icon-img" />
+            <span class="icon-text">Menu</span>
+        </div>
+
+        <div class="sidebar-icon">
+            <img src="img/siren.png" alt="Home" class="icon-img" />
+            <span class="icon-text">Home</span>
+        </div>
+
+        <div class="sidebar-icon">
+            <img src="img/group.png" alt="Gifts" class="icon-img" />
+            <span class="icon-text">Bayanihan Connect</span>
+        </div>
+
+        <div class="sidebar-icon">
+            <img src="img/megaphone.png" alt="Work" class="icon-img" />
+            <span class="icon-text">Public Advisory</span>
+        </div>
+
+        <div class="sidebar-icon">
+            <img src="img/partnership.png" alt="Tools" class="icon-img" />
+            <span class="icon-text">Business Partership</span>
+        </div>
+
+        <div class="sidebar-icon">
+            <img src="img/gift.png" alt="Stats" class="icon-img" />
+            <span class="icon-text">Rewards</span>
+        </div>
+
+        <div class="sidebar-icon">
+            <img src="img/customer-support.png" alt="Sync" class="icon-img" />
+            <span class="icon-text">eSerbisyo</span>
+        </div>
+
+        <div class="sidebar-icon" id="bot">
+            <img src="img/user.png" alt="Profile" class="icon-img" />
+            <span class="icon-text">Profile</span>
+        </div>
+
+        <div class="sidebar-icon">
+            <img src="img/logout.png" alt="Logout" class="icon-img2" id="logOut" />
+            <span class="icon-text" id="logOut">Log-out</span>
+        </div>
+
+
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <input type="text" class="search-bar" placeholder="Search something..." />
+
+            <img src="img/profile.png" width="2.5%" id="profileIMG" />
+
+            <div class="user-name">Juan Dela Cruz</div>
+        </div>
+
+        <div style="display: flex;">
+            <div style="flex: 1;">
+                <div class="points-section">
+                    <div>Juan Dela Cruz</div>
+                    <h2>3489.89 points</h2>
+                    <div>0912 345 6829</div>
+                    <button>Redeem Now ▶</button>
+                </div>
+
+                <div class="report-bar">
+                    <input type="text" placeholder="Report something..." />
+                    <img />
+
+                </div>
+
+                <div class="city-officials">
+                    <h3>City Officials</h3>
+                    <div class="officials-grid">
+                        <div class="official-card">
+                            <div>
+                                <img src="img/woman.png" width="50%" />
+                            </div>
+                            <div>Ayaka Cruz</div>
+                        </div>
+                        <div class="official-card">
+                            <div>
+                                <img src="img/woman.png" width="50%" />
+                            </div>
+                            <div>Raiden Richards</div>
+                        </div>
+                        <div class="official-card">
+                            <div>
+                                <img src="img/bussiness-man.png" width="50%" />
+                            </div>
+                            <div>Venti Santos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rank-section">
+                    <div><strong>Your Rank</strong></div>
+                    <div>Brave Citizen</div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div>500/1000 exp</div>
+                </div>
+            </div>
+
+            <div class="leaderboard">
+                <h3>Community Leaderboard 🏆</h3>
+                <div class="leaderboard-item">👤 <span>Mel Tianco</span> 👑</div>
+                <div class="leaderboard-item">👤 <span>Alden Richards</span> 👑</div>
+                <div class="leaderboard-item">👤 <span>Jessica Soho</span> 👑</div>
+                <div class="leaderboard-item">👤 <span>Kris Bernal</span> 👑</div>
+
+                <div class="advisory">
+                    <div class="advisory-header">Latest Public Advisory</div>
+                    <div id="profileContainer">
+                        <img src="img/Screenshot 2025-07-21 202746.png" id="imgAdvi" />
+                    </div>
+                    <div class="advisory-body">
+                        PABATID SA PUBLIKO<br /> HALF DAY / WALANG PASOK SA MGA PAARALAN NGAYONG ARAW - HULYO 21, 2025
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
