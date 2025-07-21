@@ -2,21 +2,16 @@ var SignUser, SignEmail, SignPass, SignConfirmPass;
 
 
 
-var userData = JSON.parse(localStorage.getItem("user"));
-var Susername = userData.CuserName;
-console.log(Susername);
-
-
 
 
 
 function SignIn() {
 
-
+    SignPass = document.getElementById("SignPass").value;
+    SignConfirmPass = document.getElementById("SignConfirmPass").value;
     if (SignPass == SignConfirmPass) {
         SignUser = document.getElementById("SignUser").value;
-        SignEmail = document.getElementById("SignEmail").value;
-        SignPass = document.getElementById("SignPass").value;
+
         SignConfirmPass = document.getElementById("SignConfirmPass").value;
 
         const user = {
