@@ -41,7 +41,10 @@ body {
 }
 
 .sidebar {
+    position: fixed;
     width: 63px;
+    height: 100vh;
+    z-index: 1000;
     background-color: #1e3461;
     color: white;
     display: flex;
@@ -50,6 +53,7 @@ body {
     padding: 10px 0;
     transition: width 0.3s;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .sidebar-icon {
@@ -77,6 +81,7 @@ body {
 .main {
     flex: 1;
     padding: 2rem;
+    margin-left: 2.2vw;
 }
 
 .topbar {
@@ -95,6 +100,14 @@ body {
     margin-right: 15vw;
     margin-bottom: 2vw;
     border: 1px solid #ccc;
+    height: 2.5vw;
+    transition: border-color 0.3s;
+    background: transparent;
+    outline: none;
+}
+
+.search-bar:focus {
+    border-color: #ff0d00;
 }
 
 .user-name {
@@ -103,6 +116,7 @@ body {
     border-radius: 20px;
     font-weight: bold;
     margin-bottom: 2vw;
+    font-size: 1.2vw;
 }
 
 .points-section {
@@ -114,7 +128,15 @@ body {
 }
 
 .points-section h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+#namee {
+    font-size: 1.5vw;
+}
+
+#numm {
+    font-size: 1.2vw;
 }
 
 .points-section button {
@@ -125,6 +147,8 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     cursor: pointer;
+    width: 8vw;
+    height: 2.2vw;
 }
 
 .report-bar {
@@ -133,29 +157,53 @@ body {
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    width: 69vw;
+    width: 73vw;
 }
 
 .report-bar input {
     background: transparent;
-    padding: 0.5rem;
+    padding: 0.8rem;
     font-size: 1rem;
-    border: 2px solid #ccc;
+    border: 2px solid #fe5b5a;
     border-radius: 999px;
     outline: none;
     transition: border-color 0.3s;
-    width: 90%;
+    width: 100%;
+}
+
+#imgRep {
+    margin-left: 1vw;
 }
 
 .report-bar input:focus {
-    border-color: #ff6961;
+    border-color: #ff0d00;
+}
+
+.leaderboardCon {
+    text-align: center;
+}
+
+.leaderboardTitle {
+    background: #ffcb64;
+    border-radius: 40px;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5vw;
+    color: white;
+}
+
+.leaderboardTitle h1 {
+    font-size: 1.3vw;
 }
 
 .leaderboard {
     background: #ffeabf;
     border-radius: 20px;
     padding: 1rem;
+    padding-bottom: 0.001vw;
+    padding-top: 0.2vw;
     margin-left: 1rem;
+    margin-bottom: 0.5vw;
 }
 
 .leaderboard h3 {
@@ -170,11 +218,24 @@ body {
 }
 
 .leaderboard-item span {
-    font-weight: bold;
+    font-size: 1.25vw;
+}
+
+#imgFRAME {
+    margin-left: auto;
 }
 
 .city-officials {
     margin: 2rem 0;
+}
+
+.city-officials h1 {
+    color: #1e3461;
+}
+
+#textOf {
+    font-size: 1.4vw;
+    margin-top: 1vw;
 }
 
 .officials-grid {
@@ -193,7 +254,6 @@ body {
 .official-logo {
     width: 60px;
     height: 60px;
-    background: orange;
     margin: 0 auto 0.5rem;
     border-radius: 50%;
 }
@@ -205,8 +265,21 @@ body {
     margin-bottom: 2rem;
 }
 
+.rank-section h1 {
+    font-size: 2vw;
+    color: #102349;
+}
+
+#RankN {
+    font-size: 1.5vw;
+}
+
+#EXP {
+    font-size: 1.1vw;
+}
+
 .progress-bar {
-    height: 10px;
+    height: 20px;
     width: 100%;
     background: #ccc;
     border-radius: 10px;
@@ -225,23 +298,34 @@ body {
     padding: 1rem;
     border-radius: 20px;
     max-width: 400px;
+    text-align: center;
 }
 
 .advisory-header {
     background: #102349;
     color: white;
-    padding: 0.5rem;
-    border-radius: 10px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.advisory-body {
-    background: red;
-    color: white;
     padding: 1rem;
     border-radius: 10px;
-    font-size: 0.9rem;
+    font-weight: 450;
+    font-size: 1.3vw;
+    margin-bottom: 1rem;
+    margin-left: 0.7vw;
+    margin-right: auto;
+}
+
+.advisory p {
+    font-size: 1.2vw;
+    padding-bottom: 0.2vw;
+    color: #102349;
+}
+
+#profileContainer {
+    background-color: #8eacca;
+    width: 20vw;
+    height: 22vw;
+    text-align: center;
+    padding: 0.5vw;
+    border-radius: 1vw;
 }
 
 #profileIMG {
@@ -249,8 +333,8 @@ body {
 }
 
 #imgAdvi {
-    width: 100%;
-    margin-bottom: 0.5vw;
+    width: 18vw;
+    margin-top: 0.6vw;
 }
 
 #bot {
